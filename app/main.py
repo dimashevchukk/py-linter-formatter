@@ -1,3 +1,4 @@
+# line added so new commit work
 def format_linter_error(error: dict) -> dict:
     return {
         "line": error["line_number"],
@@ -21,4 +22,3 @@ def format_linter_report(linter_report: dict) -> list:
         format_single_linter_file(file_path, errors)
         for file_path, errors in linter_report.items()
     ]
-
